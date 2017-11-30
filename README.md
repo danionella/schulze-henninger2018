@@ -1,2 +1,2 @@
 # Custom code
-Custom code associated with the manuscript "Smallest vertebrate brain is transparent, genetically accessible, and controls rich behavior: a platform for optical investigation of neural circuits".
+Custom code associated with the manuscript "Ultra-small, transparent and genetically accessible vertebrate brain with rich behavior".
