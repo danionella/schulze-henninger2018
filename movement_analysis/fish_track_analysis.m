@@ -3,7 +3,7 @@
 [fn, pn] = uigetfile('*.avi', 'pick a movie file');
 vidObj = VideoReader([pn fn]);
 temp = readFrame(vidObj);
-
+ 
 
 %% read first few frames and get background
 
