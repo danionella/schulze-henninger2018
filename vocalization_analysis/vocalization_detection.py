@@ -248,7 +248,8 @@ def detect_peaks( time, data, threshold, check_func=None, check_conditions=None)
     Peak detection algorithm based on 
     Todd B, Andrews D (1999) The identification of peaks in physiological signals. Comput Biomed Res 32:322–335.
     as implemented by
-
+    Jan Benda et al. at https://github.com/bendalab/thunderfish
+    as part of 'peakdetection.py', published under GPL-3.0
     """
     if not check_conditions:
         check_conditions = dict()
