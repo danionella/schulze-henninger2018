@@ -4,7 +4,7 @@ close all
 
 %% load
 % load image
-img=TIFFStack('./Slice14.tif'); % TIFFStack function can be downloaded from https://github.com/DylanMuir/TIFFStack
+img=loadtiff('./Slice14.tif'); % loadtiff function can be downloaded at https://www.mathworks.com/matlabcentral/fileexchange/35684-multipage-tiff-stack
 
 % create 2D gaussian function for smoothing
 sigma=3; % if smaller, you get several maxima within one cell, if larger you miss some cells
@@ -21,7 +21,6 @@ brainArea=ReadImageJROI('./RoiSetStackRGB.zip'); % function from https://github.
 
 % threshold the images using the manually determined values
 disp('thresholding')
-img.bInvert = false; % the threshold values have been determined with light background
 maskThr=double((img(:,:,1)<thrMan(14))); %(1-->cell,0-->no cell)
 
 % select brain region
@@ -38,7 +37,7 @@ y2=brainArea{14}.vnRectBounds(3)+100;
 x1=brainArea{14}.vnRectBounds(2)-100;
 x2=brainArea{14}.vnRectBounds(4)+100;
 
-img.bInvert = true;  % change to black background
+img=255-img;% change to black background
 clear im
 im=img(y1:y2,x1:x2,1);
 
