@@ -27,8 +27,8 @@ example command: in the script-folder run 'python vocalization_detection.py'
 The code provided analyzes video files to detect fish positions and directions, and then perform a statistical analysis of the direction distribution.
 
 The FishTracking folder contains:
-•	fish_track_analysis.m – Matlab script
-•	testid.avi – 10 seconds’ video excerpt for testing purpose
+- fish_track_analysis.m – Matlab script
+- testid.avi – 10 seconds’ video excerpt for testing purpose
 
 ### System requirements
 The analysis has been run using Matlab 2017b on a MacBook Pro (Processor: 3.3 GHz Intel Core i7, RAM: 16 GB) running macOS 10.12.6. No non-standard hardware is required.
@@ -56,9 +56,9 @@ The code provided analyzes histological brain sections to detect and count singl
 Thresholding value (to distinguish cells from rest) has been previously manually determined using Fiji. Brain area has been defined previously using Fiji.
 
 The CellCounting folder contains:
-•	CellCounting.m – Matlab source code
-•	Slice14.tif – single brain slice image (part of the 28 slices analyzed for the paper)
-•	RoiSetStackRGB.zip – ZIP archive containing brain ROI information (generated using Fiji by manually circling the brain)
+- CellCounting.m – Matlab source code
+- Slice14.tif – single brain slice image (part of the 28 slices analyzed for the paper)
+- RoiSetStackRGB.zip – ZIP archive containing brain ROI information (generated using Fiji by manually circling the brain)
 
 ### System requirements
 The analysis has been run using Matlab 2017b on a MacBook Pro (Processor: 3.3 GHz Intel Core i7, RAM: 16 GB) running macOS 10.12.6. No non-standard hardware is required.
