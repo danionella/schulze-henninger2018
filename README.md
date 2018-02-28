@@ -26,7 +26,7 @@ example command: in the script-folder run 'python vocalization_detection.py'
 ## Analysis of fish movement
 The code provided analyzes video files to detect fish positions and directions, and then perform a statistical analysis of the direction distribution.
 
-The FishTracking folder contains:
+The movement_analysis folder contains:
 - fish_track_analysis.m – Matlab script
 - testid.avi – 10 seconds’ video excerpt for testing purpose
 
@@ -38,7 +38,6 @@ A free trial version of Matlab can be downloaded at https://www.mathworks.com/ca
 Installation time is approximately to 30 minutes. 
 
 ### Demo
-Open the fish_track_analysis.m script with Matlab, make sure the Fishtracking folder is in the current path.
 Run the fish_track_analysis.m script. A window opens, double-click on testvid.avi.
 After a few seconds, Matlab Figure 1 appears, click and drag the pointer to define the image area that will be analyzed (we exclude here the walls of the tank).
 Upon the analysis of each frame, Figure 1 will display the background-subtracted image, with overlaid red dots (fish center positions) and blue arrows (fish directions).
