@@ -25,6 +25,7 @@ example command: in the script-folder run 'python vocalization_detection.py'
 
 ## Analysis of fish movement
 The code provided analyzes video files to detect fish positions and directions, and then perform a statistical analysis of the direction distribution.
+
 The FishTracking folder contains:
 •	fish_track_analysis.m – Matlab script
 •	testid.avi – 10 seconds’ video excerpt for testing purpose
